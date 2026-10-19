@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>عالم التايكواندو</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0e13;
+  color: white;
+  line-height: 1.8;
+}
+header {
+  padding: 18px 7%;
+  background: #11151c;
+  border-bottom: 1px solid #292e38;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo { color: #ff243b; font-size: 22px; font-weight: bold; }
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 8px;
+}
+.hero {
+  padding: 80px 8%;
+  min-height: 370px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(90deg, #0b0e13dd, #0b0e13aa),
+    url("https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&fit=crop&w=1400&q=85")
+    center/cover;
+}
+.hero div { max-width: 600px; }
+h1 { font-size: clamp(32px, 6vw, 52px); line-height: 1.4; }
+h2 { color: #ff3045; }
+p { color: #c4c8d0; }
+.btn {
+  display: inline-block;
+  background: #e71932;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 12px;
+}
+section { padding: 35px 7%; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+.card {
+  background: #151a23;
+  border: 1px solid #282e39;
+  border-radius: 12px;
+  padding: 20px;
+}
+.symbol { font-size: 32px; }
+footer {
+  text-align: center;
+  background: #11151c;
+  padding: 20px;
+  color: #bfc3cb;
+}
+html { scroll-behavior: smooth; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🥋 عالم التايكواندو</div>
+  <nav>
+    <a href="#about">عن الرياضة</a>
+    <a href="#belts">الأحزمة</a>
+    <a href="#benefits">الفوائد</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <div>
+      <h1>التايكواندو<br><span style="color:#ff3045">قوة، انضباط، نجاح</span></h1>
+      <p>
+        اكتشف عالم التايكواندو، وتعرّف على فنون الركل
+        والدفاع عن النفس وأهمية التركيز والاحترام.
+      </p>
+      <a class="btn" href="#about">اكتشف الرياضة</a>
+    </div>
+  </div>
+
+  <section id="about">
+    <h2>ما هي رياضة التايكواندو؟</h2>
+    <p>
+      التايكواندو فن قتالي كوري ورياضة أولمبية،
+      تشتهر بالركلات السريعة والمتنوعة، كما تساعد
+      على تطوير التوازن واللياقة والانضباط واحترام الآخرين.
+    </p>
+  </section>
+
+  <section id="belts">
+    <h2>رحلة الأحزمة</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="symbol">⚪</div>
+        <h3>الحزام الأبيض</h3>
+        <p>بداية التعلم واكتساب الأساسيات.</p>
+      </div>
+      <div class="card">
+        <div class="symbol">🟡</div>
+        <h3>الحزام الأصفر</h3>
+        <p>التقدم في المهارات والحركات الأساسية.</p>
+      </div>
+      <div class="card">
+        <div class="symbol">🔵</div>
+        <h3>الحزام الأزرق</h3>
+        <p>تطوير المهارات والتحكم في الحركات.</p>
+      </div>
+      <div class="card">
+        <div class="symbol">⚫</div>
+        <h3>الحزام الأسود</h3>
+        <p>مرحلة متقدمة تتطلب التدريب والخبرة.</p>
+      </div>
+    </div>
+    <p>قد يختلف ترتيب الأحزمة وألوانها حسب النظام والاتحاد.</p>
+  </section>
+
+  <section id="benefits">
+    <h2>فوائد التايكواندو</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="symbol">💪</div>
+        <h3>اللياقة البدنية</h3>
+        <p>تطوير القوة والمرونة والتوازن.</p>
+      </div>
+      <div class="card">
+        <div class="symbol">🎯</div>
+        <h3>التركيز</h3>
+        <p>تعلم الدقة والتحكم في الحركة.</p>
+      </div>
+      <div class="card">
+        <div class="symbol">🤝</div>
+        <h3>الاحترام</h3>
+        <p>احترام المدرب والزملاء والمنافسين.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="text-align:center">
+    <h2>ابدأ رحلتك اليوم!</h2>
+    <p>التقدم يأتي بالتدريب المنتظم والصبر والتعلم.</p>
+    <a class="btn" href="#about">اكتشف المزيد</a>
+  </section>
+</main>
+
+<footer>
+  <p>عالم التايكواندو © 2026</p>
+  <p>القوة • الاحترام • الانضباط</p>
+</footer>
+
+</body>
+</html>
